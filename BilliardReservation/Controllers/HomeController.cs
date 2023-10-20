@@ -18,7 +18,19 @@ namespace BilliardReservation.Controllers
             return View();
         }
 
+        
+
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Reservation() {
+            
+            return View();
+        }
+
+        public IActionResult Contact()
         {
             return View();
         }
