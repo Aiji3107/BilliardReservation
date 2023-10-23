@@ -29,5 +29,10 @@ namespace BilliardReservation.Controllers
         {
             return View();
         }
+
+        public IActionResult ReservationReport()
+        {
+            return View();
+        }
     }
 }
