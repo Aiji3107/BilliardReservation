@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h1>Daftar Users</h1>
+
+<table border="1">
+    <tr>
+        <th>Nama User</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Aksi</th>
+    </tr>
+    <tr>
+        <td>User 1</td>
+        <td>admin1</td>
+        <td>admin1@example.com</td>
+        <td>********</td>
+        <td>
+            <button onclick="editAdmin(1)">Edit</button>
+            <button onclick="deleteAdmin(1)">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td>User 2</td>
+        <td>admin2</td>
+        <td>admin2@example.com</td>
+        <td>********</td>
+        <td>
+            <button onclick="editAdmin(2)">Edit</button>
+            <button onclick="deleteAdmin(2)">Delete</button>
+        </td>
+    </tr>
+    <!-- Tambahkan baris lain sesuai dengan jumlah admin yang ada -->
+</table>
+
+<button onclick="addAdmin()">Add Admin</button>
+
+<script>
+    function editAdmin(adminId) {
+        // Logika untuk mengedit admin
+        console.log('Edit Admin dengan ID: ' + adminId);
+    }
+
+    function deleteAdmin(adminId) {
+        // Logika untuk menghapus admin
+        console.log('Hapus Admin dengan ID: ' + adminId);
+    }
+
+    function addAdmin() {
+        // Logika untuk menambahkan admin baru
+        console.log('Tambah Admin Baru');
+    }
+</script>

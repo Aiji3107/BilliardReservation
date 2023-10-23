@@ -30,9 +30,29 @@ namespace BilliardReservation.Controllers
             return View();
         }
 
+        public IActionResult Administrator()
+        {
+            return View();
+        }
+
+        public IActionResult Signin() {
+            return View();
+        }
+
+        public IActionResult Signup() {
+            return View();
+        }
+
         public IActionResult Contact()
         {
             return View();
+        }
+
+        //For Click Button Submit Adminnistrator
+        public IActionResult OnPostGoToAnotherPage()
+        {
+            // Redirect to another page or route
+            return RedirectToPage("/Signin"); // Example using Razor Pages
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
