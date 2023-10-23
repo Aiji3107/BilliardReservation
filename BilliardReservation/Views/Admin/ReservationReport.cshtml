@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "ReservationReport";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Daftar Reservasi</h1>
+
+<table border="1">
+    <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Tanggal Booking</th>
+        <th>Jumlah Jam</th>
+        <th>Jumlah Meja</th>
+        <th>Aksi</th>
+    </tr>
+    <tr>
+        <td>JohnDoe</td>
+        <td>johndoe@example.com</td>
+        <td>2023-10-25</td>
+        <td>2</td>
+        <td>4</td>
+        <td>
+            <button onclick="editReservation(this)">Edit</button>
+            <button onclick="deleteReservation(this)">Delete</button>
+            <button onclick="printReservation(this)">Print</button>
+        </td>
+    </tr>
+    <!-- Tambahkan baris-baris lainnya di sini -->
+</table>
+
+
